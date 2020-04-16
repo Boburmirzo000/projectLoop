@@ -1,0 +1,203 @@
+@font-face {
+  font-display:swap;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src:
+  url("../fonts/playfair-display-v19-latin-regular.woff2") format("woff2"),
+  url("../fonts/playfair-display-v19-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-display:swap;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  src:
+  url("../fonts/playfair-display-v19-latin-500.woff2") format("woff2"),
+  url("../fonts/playfair-display-v19-latin-500.woff") format("woff");
+}
+@font-face {
+  font-display:swap;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  src:
+  url("../fonts/playfair-display-v19-latin-700.woff2") format("woff2"),
+  url("../fonts/playfair-display-v19-latin-700.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src:url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+  url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src:url("../fonts/roboto-v20-latin-500.woff2") format("woff2"),
+  url("../fonts/roboto-v20-latin-500.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src:url("../fonts/roboto-v20-latin-700.woff2") format("woff2"),
+  url("../fonts/roboto-v20-latin-700.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/roboto-v20-latin-300italic.woff2") format("woff2"),
+  url("../fonts/roboto-v20-latin-300italic.woff") format("woff");
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body{
+  font-family:"Roboto", sans-serif;
+  background-color: #f8ebe9;
+}
+.section{
+  display: flex;
+  max-width: 1000px;
+  margin: 100px auto;
+}
+.info-section{
+  max-width: 640px;
+  background-color: #fff;
+  padding-top: 35px;
+  padding-right: 30px;
+  padding-left: 100px;
+  padding-bottom: 110px;
+}
+.picture-site{
+  width: 360px;
+  padding-top: 35px;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.picture-site-button{
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444
+}
+.picture-site-button::before{
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/arrow-back.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  content: "";
+}
+.site-nav{
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 135px;
+}
+.site-nav a{
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+  color:#aaa;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.site-nav-item--active a{
+  color: #000;
+}
+.site-nav a:hover{
+  color: #000;
+}
+.site-title h2{
+  position: relative;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-size: 60px;
+  margin: 0;
+}
+.site-heading::after{
+position: absolute;
+top: 110px;
+right: 60px;
+display: block;
+width: 100px;
+height: 4px;
+background-color: #000;
+content: "";
+}
+.site-title p{
+  font-family: "Playfair Display";
+font-weight: 500;
+font-size: 17px;
+margin-top: 35px;
+}
+.site-city-info{
+  display: flex;
+}
+.city-info{
+  padding: 0 40px;
+  margin: 0;
+  line-height: 1.9;
+}
+.media{
+  position: relative;
+}
+.play-button{
+position: absolute;
+left: 60px;
+top: 30px;
+border: none;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: rgba(255,255,255,0.5);
+cursor: pointer;
+}
+.media-link{
+  display: block;
+  position: relative;
+  margin-top: 15px;
+  text-decoration: none;
+  color:#222;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.media-link::after{
+  position: absolute;
+  top: -1px;
+  right: 35px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/arrow-forward.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+}
